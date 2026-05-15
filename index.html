@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palačinka Bar Leo | Pancake & Cafe Bar</title>
+    <meta name="description" content="Palačinka Bar Leo - Pancake & Cafe Bar. Slatke, voćne, premium i slane palačinke. Dobrodošli!">
+    <link rel="icon" type="image/png" href="logo/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="logo/logo.png" alt="Palačinka Bar Leo" class="nav-logo-img">
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Početna</a></li>
+                <li><a href="#about">O nama</a></li>
+                <li><a href="#features">Zašto mi</a></li>
+                <li><a href="#menu">Jelovnik</a></li>
+                <li><a href="#hours">Radno vrijeme</a></li>
+                <li><a href="#testimonials">Recenzije</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Pancake & Cafe Bar</p>
+            <h1 class="hero-title">Dobrodošli u<br><span>Palačinka Bar Leo</span></h1>
+            <p class="hero-desc">Jedinstveni okusi palačinki napravljeni s ljubavlju.<br>Posjetite nas i uživajte u svakom zalogaju.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Pogledaj Jelovnik</a>
+                <a href="#contact" class="btn btn-outline">Pronađi nas</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <span class="section-tag">O nama</span>
+            <h2 class="section-title">Pozivamo vas da<br>posjetite naš bar</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Palačinka Bar Leo je mjesto gdje se tradicija spaja s kreativnošću. Naše palačinke pripremamo od najkvalitetnijih sastojaka, s ljubavlju i pažnjom prema svakom detalju.</p>
+                    <p>Bilo da tražite slatku poslasticu, voćno osvježenje ili slanu palačinku za obrok — kod nas ćete pronaći savršen izbor za svaki ukus i priliku.</p>
+                    <a href="#menu" class="btn btn-primary">Pogledaj Jelovnik</a>
+                </div>
+                <div class="about-images">
+                    <div class="about-img-wrapper">
+                        <img src="onama.jpg" alt="O nama - Palačinka Bar Leo" loading="lazy">
+                    </div>
+                    <div class="about-img-wrapper about-img-small">
+                        <img src="onama2.jpg" alt="O nama - Palačinka Bar Leo" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="about-social">
+                <a href="https://www.facebook.com/palacinkabar_leo" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/pancakebar_leo" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section" id="features">
+        <div class="container">
+            <span class="section-tag">Zašto mi</span>
+            <h2 class="section-title">Zašto nas ljudi biraju?</h2>
+            <p class="section-desc">Posvećeni smo kvaliteti, okusu i vašem zadovoljstvu.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                    </div>
+                    <h3>Vrhunski okus</h3>
+                    <p>Svaka palačinka je pripremljena s pažnjom kako bi svaki zalogaj bio nezaboravan doživljaj za vaše nepce.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </div>
+                    <h3>Svježi sastojci</h3>
+                    <p>Koristimo samo najsvježije i najkvalitetnije sastojke kako bismo osigurali autentičan i bogat okus.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                    </div>
+                    <h3>Iskusni majstori</h3>
+                    <p>Naš tim s ljubavlju priprema svaku palačinku, kombinirajući tradicionalne recepte s modernim tehnikama.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="25">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Vrsta palačinki</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Svježi sastojci</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section section" id="menu">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Naš jelovnik</h2>
+
+            <!-- Menu Gallery -->
+            <div class="menu-gallery">
+                <div class="gallery-scroll">
+                    <div class="gallery-track" id="galleryTrack">
+                        <img src="menu/meni1.png" alt="Jelovnik naslovnica" loading="lazy" class="gallery-img">
+                        <img src="menu/meni2.png" alt="Jednostavne palačinke" loading="lazy" class="gallery-img">
+                        <img src="menu/meni3.png" alt="Slatke palačinke" loading="lazy" class="gallery-img">
+                        <img src="menu/meni4.png" alt="Voćne palačinke" loading="lazy" class="gallery-img">
+                        <img src="menu/meni5.png" alt="Premium palačinke" loading="lazy" class="gallery-img">
+                        <img src="menu/meni6.png" alt="Slane palačinke" loading="lazy" class="gallery-img">
+                        <img src="menu/meni7.png" alt="Doručak" loading="lazy" class="gallery-img">
+                        <img src="menu/meni8.png" alt="Dodaci" loading="lazy" class="gallery-img">
+                        <img src="menu/meni9.png" alt="Suhi dodaci i voće" loading="lazy" class="gallery-img">
+                        <img src="menu/meni10.png" alt="Čokoladice" loading="lazy" class="gallery-img">
+                        <img src="menu/meni11.png" alt="Slani dodaci i prilozi" loading="lazy" class="gallery-img">
+                        <img src="menu/meni12.png" alt="Bezalkoholna pića" loading="lazy" class="gallery-img">
+                        <img src="menu/meni13.png" alt="Alkoholna pića" loading="lazy" class="gallery-img">
+                        <img src="menu/meni14.png" alt="Topli napitci" loading="lazy" class="gallery-img">
+                        <img src="menu/meni15.png" alt="Pivo i cider" loading="lazy" class="gallery-img">
+                        <img src="menu/meni16.png" alt="Jelovnik stranica 16" loading="lazy" class="gallery-img">
+                    </div>
+                </div>
+                <div class="gallery-nav">
+                    <button class="gallery-btn" id="galleryPrev" aria-label="Previous">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button class="gallery-btn" id="galleryNext" aria-label="Next">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Working Hours -->
+    <section class="hours section" id="hours">
+        <div class="hours-overlay"></div>
+        <div class="container hours-content">
+            <span class="section-tag section-tag--light">Radno vrijeme</span>
+            <h2 class="section-title section-title--light">Radno vrijeme</h2>
+            <div class="hours-grid">
+                <div class="hours-block">
+                    <h4>Ponedjeljak - Petak</h4>
+                    <p>08:00 — 22:00</p>
+                </div>
+                <div class="hours-divider"></div>
+                <div class="hours-block">
+                    <h4>Subota</h4>
+                    <p>09:00 — 23:00</p>
+                </div>
+                <div class="hours-divider"></div>
+                <div class="hours-block">
+                    <h4>Nedjelja</h4>
+                    <p>09:00 — 22:00</p>
+                </div>
+            </div>
+            <div class="hours-buttons">
+                <a href="https://www.instagram.com/pancakebar_leo" target="_blank" rel="noopener" class="btn btn-primary">Instagram</a>
+                <a href="https://www.facebook.com/palacinkabar_leo" target="_blank" rel="noopener" class="btn btn-outline btn-outline--light">Facebook</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dress Code -->
+    <section class="dress-code section">
+        <div class="container">
+            <div class="dress-code-card">
+                <h2 class="dress-code-title">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C10.34 2 9 3.34 9 5c0 1.66 1.34 3 3 3s3-1.34 3-3c0-1.66-1.34-3-3-3zm-2 8c-1.1 0-2 .9-2 2v6h2v6h4v-6h2v-6c0-1.1-.9-2-2-2h-4z"/></svg>
+                    Dress Code
+                </h2>
+                <p class="dress-code-text">
+                    Molimo Vas da poštujete naš dress code; <strong>Nemojte dolaziti u kupaćim kostimima</strong>,
+                    uvijek obucite majicu ili prekrijte gornji dio tijela. Također molimo <strong>nemojte sjedati
+                    mokri na jastuke</strong>, maknite ih sa strane. Hvala!
+                </p>
+                <div class="dress-code-icons">
+                    <div class="dress-code-icon-item">
+                        <div class="dress-code-icon no-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <!-- Bikini top -->
+                                <path d="M6 8c0-2 2-3.5 3.5-3.5S12 6 12 6s1-2 2.5-2S18 6 18 8" stroke-width="1.8"/>
+                                <line x1="6" y1="8" x2="18" y2="8" stroke-width="1.5"/>
+                                <!-- Bikini bottom -->
+                                <path d="M8 14h8l-1 4H9l-1-4z" stroke-width="1.5"/>
+                                <!-- Prohibition slash -->
+                                <line x1="3" y1="2" x2="21" y2="22" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Bez kupaćih kostima</span>
+                    </div>
+                    <div class="dress-code-icon-item">
+                        <div class="dress-code-icon no-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <!-- Water droplet -->
+                                <path d="M12 2.5C12 2.5 5 11 5 15.5c0 3.87 3.13 7 7 7s7-3.13 7-7C19 11 12 2.5 12 2.5z"/>
+                                <!-- Prohibition slash -->
+                                <line x1="3" y1="2" x2="21" y2="22" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Ne sjedajte mokri</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <span class="section-tag">Recenzije</span>
+            <h2 class="section-title">Što kažu naši gosti</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-quote">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p class="testimonial-text">Najbolje palačinke u gradu! Čokoladna Fantazija je nevjerojatna — savršena kombinacija Nutelle i čokoladnih mrvica. Definitivno se vraćamo!</p>
+                    <div class="testimonial-author">
+                        <strong>Ana M.</strong>
+                        <span>Google Reviews</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p class="testimonial-text">Odlično mjesto za doručak! Omlet sa šunkom i sirom uz kavu je savršen početak dana. Osoblje je izuzetno ljubazno i usluga brza.</p>
+                    <div class="testimonial-author">
+                        <strong>Marko K.</strong>
+                        <span>Google Reviews</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" opacity="0.15"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    </div>
+                    <p class="testimonial-text">Kinder Bueno palačinka je čisto savršenstvo! Moja djeca obožavaju dolaziti ovdje. Atmosfera je ugodna i cijene su razumne za kvalitetu koja se nudi.</p>
+                    <div class="testimonial-author">
+                        <strong>Ivana P.</strong>
+                        <span>Instagram</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <button class="dot active" data-index="0" aria-label="Testimonial 1"></button>
+                <button class="dot" data-index="1" aria-label="Testimonial 2"></button>
+                <button class="dot" data-index="2" aria-label="Testimonial 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.0!2d15.2883!3d44.0767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zT2JhbGEgZG9uIE1hcmthIFNpa2lyacSHYSAzLCAyMzIwNSwgQmliaW5qZQ!5e0!3m2!1shr!2shr!4v1" width="100%" height="350" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo/logo.png" alt="Palačinka Bar Leo" class="footer-logo">
+                    <p>Pancake & Cafe Bar Leo — mjesto gdje svaka palačinka priča svoju priču.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/palacinkabar_leo" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/pancakebar_leo" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigacija</h4>
+                    <a href="#hero">Početna</a>
+                    <a href="#about">O nama</a>
+                    <a href="#menu">Jelovnik</a>
+                    <a href="#hours">Radno vrijeme</a>
+                    <a href="#testimonials">Recenzije</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <a href="tel:098618181" class="footer-phone">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                        098 618 181
+                    </a>
+                    <p>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                        WiFi: ANTE | Pass: 098618181
+                    </p>
+                    <p>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Obala don Marka Sikirića 3, 23205 Bibinje
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Palačinka Bar Leo. Sva prava pridržana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+        <button class="lightbox-next" id="lightboxNext" aria-label="Next">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
