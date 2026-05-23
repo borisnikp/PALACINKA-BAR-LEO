@@ -1225,6 +1225,15 @@ button {
         height: auto;
     }
 
+    .gallery-nav {
+        position: static;
+        transform: none;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 1rem;
+        pointer-events: auto;
+    }
+
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
