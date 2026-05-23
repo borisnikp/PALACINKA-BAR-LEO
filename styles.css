@@ -338,6 +338,29 @@ button {
     flex-wrap: wrap;
 }
 
+.hero-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+
+.hero-instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    color: var(--color-white);
+    transition: border-color var(--transition), background var(--transition);
+}
+
+.hero-instagram:hover {
+    border-color: var(--color-accent);
+    background: rgba(245, 158, 11, 0.15);
+}
+
 .hero-scroll {
     position: absolute;
     bottom: 2rem;

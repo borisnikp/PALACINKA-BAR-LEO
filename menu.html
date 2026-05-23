@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelovnik | Palačinka Bar Leo</title>
+    <meta name="description" content="Jelovnik Palačinka Bar Leo - Slatke, voćne, premium i slane palačinke, pića i dodaci.">
+    <link rel="icon" type="image/png" href="logo/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --color-bg: #0c0a09;
+            --color-surface: #292524;
+            --color-text: #fafaf9;
+            --color-text-muted: #a8a29e;
+            --color-accent: #f59e0b;
+            --color-accent-dark: #d97706;
+        }
+
+        html { -webkit-text-size-adjust: 100%; }
+
+        body {
+            font-family: 'Outfit', system-ui, sans-serif;
+            background: var(--color-bg);
+            color: var(--color-text);
+            min-height: 100dvh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img { max-width: 100%; height: auto; display: block; }
+
+        .menu-page {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem 3rem;
+        }
+
+        /* Header */
+        .menu-header {
+            text-align: center;
+            padding: 1rem 0 1.5rem;
+        }
+
+        .menu-logo {
+            width: 72px;
+            height: 72px;
+            object-fit: contain;
+            margin: 0 auto 0.75rem;
+            border-radius: 50%;
+        }
+
+        .menu-header h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        .menu-header p {
+            color: var(--color-text-muted);
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+        }
+
+        /* Visit site button */
+        .site-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding: 0.6rem 1.4rem;
+            background: var(--color-accent);
+            color: var(--color-bg);
+            font-weight: 600;
+            font-size: 0.875rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .site-link:hover { background: var(--color-accent-dark); }
+
+        /* Slider */
+        .menu-slider {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .slider-img {
+            flex: 1;
+            min-width: 0;
+            border-radius: 8px;
+            background: var(--color-surface);
+            min-height: 200px;
+        }
+
+        .slider-btn {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border: 1.5px solid var(--color-surface);
+            border-radius: 50%;
+            background: transparent;
+            color: var(--color-text);
+            cursor: pointer;
+            transition: border-color 0.3s, background 0.3s;
+        }
+
+        .slider-btn:hover {
+            border-color: var(--color-accent);
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        .slider-counter {
+            text-align: center;
+            margin-top: 0.75rem;
+            font-size: 0.875rem;
+            color: var(--color-text-muted);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .slider-counter span { color: var(--color-text); font-weight: 500; }
+
+        /* Footer */
+        .menu-footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--color-surface);
+        }
+
+        .menu-footer a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-accent);
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .menu-footer p {
+            color: var(--color-text-muted);
+            font-size: 0.8rem;
+            margin-top: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-page">
+        <header class="menu-header">
+            <img src="logo/logo.png" alt="Palačinka Bar Leo" class="menu-logo">
+            <h1>Jelovnik</h1>
+            <p>Pancake & Cafe Bar Leo</p>
+            <a href="index.html" class="site-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path d="M9 22V12h6v10"/></svg>
+                Posjeti našu stranicu
+            </a>
+        </header>
+
+        <div class="menu-slider">
+            <button class="slider-btn" id="prevBtn" aria-label="Prethodna">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <img id="sliderImg" class="slider-img" src="menu/meni1.png" alt="Jelovnik naslovnica">
+            <button class="slider-btn" id="nextBtn" aria-label="Sljedeća">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+        </div>
+        <div class="slider-counter"><span id="currentNum">1</span> / <span id="totalNum">16</span></div>
+
+        <footer class="menu-footer">
+            <a href="tel:098618181">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                098 618 181
+            </a>
+            <p>&copy; 2025 Palačinka Bar Leo</p>
+        </footer>
+    </div>
+
+    <script>
+        const pages = [
+            { src: 'menu/meni1.png', alt: 'Jelovnik naslovnica' },
+            { src: 'menu/meni2.png', alt: 'Jednostavne palačinke' },
+            { src: 'menu/meni3.png', alt: 'Slatke palačinke' },
+            { src: 'menu/meni4.png', alt: 'Voćne palačinke' },
+            { src: 'menu/meni5.png', alt: 'Premium palačinke' },
+            { src: 'menu/meni6.png', alt: 'Slane palačinke' },
+            { src: 'menu/meni7.png', alt: 'Doručak' },
+            { src: 'menu/meni8.png', alt: 'Dodaci' },
+            { src: 'menu/meni9.png', alt: 'Suhi dodaci i voće' },
+            { src: 'menu/meni10.png', alt: 'Čokoladice' },
+            { src: 'menu/meni11.png', alt: 'Slani dodaci i prilozi' },
+            { src: 'menu/meni12.png', alt: 'Bezalkoholna pića' },
+            { src: 'menu/meni13.png', alt: 'Alkoholna pića' },
+            { src: 'menu/meni14.png', alt: 'Topli napitci' },
+            { src: 'menu/meni15.png', alt: 'Pivo i cider' },
+            { src: 'menu/meni16.png', alt: 'Jelovnik stranica 16' }
+        ];
+
+        let current = 0;
+        const img = document.getElementById('sliderImg');
+        const currentNum = document.getElementById('currentNum');
+        const totalNum = document.getElementById('totalNum');
+
+        totalNum.textContent = pages.length;
+
+        function show(index) {
+            current = (index + pages.length) % pages.length;
+            img.src = pages[current].src;
+            img.alt = pages[current].alt;
+            currentNum.textContent = current + 1;
+        }
+
+        document.getElementById('prevBtn').addEventListener('click', function() { show(current - 1); });
+        document.getElementById('nextBtn').addEventListener('click', function() { show(current + 1); });
+
+        let startX = 0;
+        img.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; }, { passive: true });
+        img.addEventListener('touchend', function(e) {
+            const diff = startX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 40) show(current + (diff > 0 ? 1 : -1));
+        });
+    </script>
+</body>
+</html>
