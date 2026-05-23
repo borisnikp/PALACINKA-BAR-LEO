@@ -99,20 +99,39 @@ galleryPrev.addEventListener('click', () => {
 
 // Touch swipe for gallery
 let touchStartX = 0;
-let touchEndX = 0;
 
 galleryTrack.addEventListener('touchstart', e => {
-    touchStartX = e.changedTouches[0].screenX;
+    touchStartX = e.changedTouches[0].clientX;
 }, { passive: true });
 
 galleryTrack.addEventListener('touchend', e => {
-    touchEndX = e.changedTouches[0].screenX;
-    const diff = touchStartX - touchEndX;
-    if (Math.abs(diff) > 50) {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) {
         if (diff > 0) galleryNext.click();
         else galleryPrev.click();
     }
 }, { passive: true });
+
+// Mouse drag for gallery
+let mouseDown = false;
+let mouseStartX = 0;
+
+galleryTrack.addEventListener('mousedown', e => {
+    mouseDown = true;
+    mouseStartX = e.clientX;
+    galleryTrack.style.cursor = 'grabbing';
+});
+
+document.addEventListener('mouseup', e => {
+    if (!mouseDown) return;
+    mouseDown = false;
+    galleryTrack.style.cursor = '';
+    const diff = mouseStartX - e.clientX;
+    if (Math.abs(diff) > 40) {
+        if (diff > 0) galleryNext.click();
+        else galleryPrev.click();
+    }
+});
 
 // ===== Lightbox =====
 const lightbox = document.getElementById('lightbox');
@@ -122,16 +141,6 @@ const lightboxPrev = document.getElementById('lightboxPrev');
 const lightboxNext = document.getElementById('lightboxNext');
 const galleryImages = document.querySelectorAll('.gallery-img');
 let currentLightboxIndex = 0;
-
-galleryImages.forEach((img, index) => {
-    img.addEventListener('click', () => {
-        currentLightboxIndex = index;
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        lightbox.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    });
-});
 
 lightboxClose.addEventListener('click', closeLightbox);
 lightbox.addEventListener('click', (e) => {
