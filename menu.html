@@ -159,9 +159,9 @@
     <div class="menu-page">
         <header class="menu-header">
             <img src="logo/logo.png" alt="Palačinka Bar Leo" class="menu-logo">
-            <h1>Jelovnik</h1>
+            <h1 data-i18n="m_title">Jelovnik</h1>
             <p>Pancake & Cafe Bar Leo</p>
-            <a href="index.html" class="site-link">
+            <a href="index.html" class="site-link" data-i18n="m_site_link">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path d="M9 22V12h6v10"/></svg>
                 Posjeti našu stranicu
             </a>
@@ -230,6 +230,22 @@
             const diff = startX - e.changedTouches[0].clientX;
             if (Math.abs(diff) > 40) show(current + (diff > 0 ? 1 : -1));
         });
+
+        // Language detection for menu page
+        var menuTranslations = {
+            m_title: 'Menu',
+            m_site_link: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path d="M9 22V12h6v10"/></svg> Visit our website'
+        };
+        var savedLang = localStorage.getItem('pbl_lang');
+        var browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+        var lang = savedLang || (browserLang.startsWith('hr') ? 'hr' : 'en');
+        if (lang === 'en') {
+            document.querySelectorAll('[data-i18n]').forEach(function(el) {
+                var key = el.getAttribute('data-i18n');
+                if (menuTranslations[key]) el.innerHTML = menuTranslations[key];
+            });
+            document.documentElement.lang = 'en';
+        }
     </script>
 </body>
 </html>

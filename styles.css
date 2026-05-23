@@ -361,6 +361,26 @@ button {
     background: rgba(245, 158, 11, 0.15);
 }
 
+.lang-toggle {
+    margin-left: 1rem;
+    padding: 0.35rem 0.75rem;
+    background: transparent;
+    border: 1.5px solid var(--color-accent);
+    border-radius: 50px;
+    color: var(--color-accent);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background var(--transition), color var(--transition);
+}
+
+.lang-toggle:hover {
+    background: var(--color-accent);
+    color: var(--color-dark);
+}
+
 .hero-scroll {
     position: absolute;
     bottom: 2rem;
@@ -627,6 +647,9 @@ button {
 .menu-gallery {
     margin-top: 1.5rem;
     position: relative;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gallery-scroll {
@@ -1155,6 +1178,12 @@ button {
 
     .nav-toggle.active span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .lang-toggle {
+        position: absolute;
+        top: 1.25rem;
+        right: 4rem;
     }
 
     .about-grid {
