@@ -645,7 +645,6 @@ button {
     flex: 0 0 100%;
     width: 100%;
     height: auto;
-    max-height: 80vh;
     object-fit: contain;
     border-radius: var(--radius);
     cursor: pointer;
@@ -1222,8 +1221,8 @@ button {
     }
 
     .gallery-img {
-        min-width: 240px;
-        height: 340px;
+        min-width: 100%;
+        height: auto;
     }
 
     .stats-grid {
